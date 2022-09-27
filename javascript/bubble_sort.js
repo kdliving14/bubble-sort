@@ -1,5 +1,15 @@
 function bubbleSort(arr) {
   // type your code here
+  let i = 0
+
+  while (i < arr.length-1){
+    if(arr[i] > arr[i+1])
+    {
+      [arr[i], arr[i+1]] = [arr[i+1], arr[i]]
+      console.log(arr)
+    }
+    i++
+  }
 }
 
 if (require.main === module) {
@@ -27,3 +37,9 @@ module.exports = bubbleSort;
 
 // Please add your pseudocode to this file
 // And a written explanation of your solution
+
+// two pointers
+// [i], [i+1]
+
+// if empty return array
+
